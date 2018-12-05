@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+          <th>ParentTaskName</th>
+        <th>Task</th>
+        <th>Priority</th>       
+        <th>StartDate</th>
+        <th>EndDate</th>
+        <th>UserName</th>
+        <th>ProjectName</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of list">
+      <tr>
+          <td>{{item.ParentTaskName}}</td>
+        <td>{{item.Task}}</td>
+        <td>{{item.Priority}}</td>        
+        <td>{{item.Start_Date}}</td>
+        <td>{{item.End_Date}}</td>
+        <td>{{item.UserName}}</td>
+        <td>{{item.ProjectName}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

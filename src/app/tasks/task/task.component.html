@@ -1,0 +1,74 @@
+
+<br>
+<form #taskForm="ngForm">
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+          <label for="Project">Project:</label>
+      </div>    
+      <div class="col-md-3">
+          <input type="text"
+           id="projectName" name="ProjectName" class="form-control"/>        
+      </div>
+      <div class="col-md-2">
+       <button value="Search" class="btn btn-primary btn-round-sm btn-sm"></button>
+      </div>    
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-2">
+          <label for="Project">Task:</label>
+      </div>
+      <div>
+      </div>
+      <div class="col-md-6">
+          <input type="text"
+           id="task" name="Task" class="form-control"/>        
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-2">         
+      </div>
+      <div class="col-md-6">
+      <input type="checkbox" value="ParentTask"  name="ParentTask"> Parent Task <br>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-2">
+          <label for="Priority">Priority</label>
+      </div>
+      <div class="col-md-6">
+            <input type="range" class="form-control-range" value="30" id="formControlRange">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2">
+          <label for="Project">Parent Task:</label>
+      </div>    
+      <div class="col-md-3">
+          <input type="text"
+           id="PTaskName" name="PTaskName" class="form-control"/>        
+      </div>
+      <div class="col-md-2">
+       <button value="Search" class="btn btn-primary btn-round-sm btn-sm"></button>
+      </div>    
+  </div><br>
+  <div class="row">
+      <div class="col-md-2">
+            <label for="StartDate">Start Date:</label>
+      </div>
+      <div class="col-md-2">
+            <input type="Date" name="ipStartDate" class="form-control">
+      </div>
+      <div class="col-md-2">
+            <label for="EndDate">End Date:</label>
+      </div>
+      <div class="col-md-2">
+            <input type="Date" name="ipEndate" class="form-control">
+      </div>
+  </div>
+  <br>
+</div>
+</form>

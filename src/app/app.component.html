@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h2 class="jumpotron bg-secondary text-white">
+    Welcome to {{ title }}
+  </h2>
+</div>
+<div class="container">
+  <nav class=" nav">
+    <ul class="nav navbar-nav">
+      <li>
+        <a [routerLink]="'/Project'">Add Project</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="tasks">Add Task</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="Users">Add User</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" [routerLink]="'/ViewTask'">View Task</a>
+      </li>     
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <table>
+  <tr>
+    <td [routerLink]="'/addTask'">Add Task
+    </td>
+  </tr>
+  <tr>
+    <td [routerLink]="'/viewTask'">View Task</td>
+  </tr>
+  <tr>
+    <td [routerLink]="'/updateTask'">Update Task</td>
+  </tr>
+</table>
+<router-outlet></router-outlet> -->
+<!-- <app-add-task></app-add-task> -->

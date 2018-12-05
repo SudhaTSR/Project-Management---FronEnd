@@ -1,0 +1,61 @@
+<div class="container">
+  <form>
+    <table class="table">
+      <tr>
+        <td>Project</td>
+        <td>
+          <input type="text" name="Project_ID" [(ngModel)]="item.Project_ID">
+        </td>
+        <tr>
+          <tr>
+            <td>Task</td>
+            <td>
+              <input type="text" name="Task" [(ngModel)]="item.Task">
+            </td>
+            <tr>
+              <td>Priority</td>
+              <td>
+                <input type="range" name="Priority" [(ngModel)]="item.Priority" min="1" max="30" step="1">
+              </td>
+            </tr>
+            <tr>
+              <td>ParentTask</td>
+              <td>
+                <input type="text" name="Parent_ID" [(ngModel)]="item.Parent_ID">
+              </td>
+            </tr>
+            <tr>
+              <td>StartDate</td>
+              <td>
+                <input type="date" name="Start_Date" [(ngModel)]="item.Start_Date">
+              </td>
+            </tr>
+            <tr>
+              <td>EndDate</td>
+              <td>
+                <input type="date" name="End_Date" [(ngModel)]="item.End_Date">
+              </td>
+            </tr>
+            <tr>
+              <td>STATUS</td>
+              <td>
+                <input type="text" name="Status" [(ngModel)]="item.Status">
+              </td>
+            </tr>
+            <tr>
+              <td>UserId</td>
+              <td>
+                <input type="text" name="UserId" [(ngModel)]="item.UserId">
+              </td>
+            </tr>
+            <tr>
+
+              <tr>
+                <td colspan="2">
+                  <input (click)="Add()" type="button" value="Submit">
+                  <input (click)="reset()" type="button" value="reset">
+                </td>
+              </tr>
+    </table>
+  </form>
+</div>
